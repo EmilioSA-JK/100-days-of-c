@@ -23,22 +23,37 @@
         }
         // This is a nested conditional just like "elif" in python
         else if (age >= 13){
-            printf("You're able to watch this movie with an adult\n")
+            printf("You're able to watch this movie with an adult\n");
         }
 
         else{
 
-            printf("You chiquitin, you can't watch this\n")
+            printf("You chiquitin, you can't watch this\n");
 
         }
 
 
-        switch{
 
-            case
+        //Here we use the Switch conditional
+        int position = 2;
 
 
+        switch(position) {
 
+            case 1:
+                printf("Gold\n");
+                break;
+
+            case 2:
+                printf("Silver\n");
+                break;
+
+            case 3:
+                printf("Bronze\n");
+                break;
+
+            default:
+                printf("No medal\n");
 
         }
 
