@@ -8,9 +8,9 @@ int main () {
     lower = 0;
     upper = 300;
     step = 20;
-    char Farenheit[] = "Farenheit";
+    char Fahrenheit[] = "Fahrenheit";
     char Celsius[] = "Celsius";
-    printf("%9s, %9s\n",Farenheit Celsius);
+    printf("%9s, %9s\n",Fahrenheit Celsius);
     fahr = lower;
 
     while (fahr <= upper) {
