@@ -1,11 +1,13 @@
 #include <stdio.h>
 
-int lenght(char* passwd[]){
+int length(char *passwd){
 
-    i = 0;
-    count = 0;
 
-    while (i != '\0') {
+    char *i = passwd;
+
+    int count = 0;
+
+    while (*i != '\0') {
 
         i++;
         count++;
@@ -19,6 +21,10 @@ int lenght(char* passwd[]){
 
 int main () {
     
+    char passwd[30] = "hack";
+
+
     
+    printf("%d", length(passwd));
 
 }
