@@ -35,9 +35,7 @@ int uppercase(char *passwd){
         return count >= 2;
 
     }
-
-        
-        
+ 
 }
 
 int main () {
