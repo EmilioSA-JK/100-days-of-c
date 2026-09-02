@@ -38,10 +38,32 @@ int uppercase(char *passwd){
  
 }
 
+int lowercase(char *passwd){
+
+    char *i = passwd;
+    int count = 0;
+
+    while(*i != '\0') {
+
+        if ((*i >= 'a') && (*i <= 'z')) {
+
+            count++;
+
+        }
+
+        i++;
+
+        return count >= 2;
+
+    }
+ 
+}
+
 int main () {
     
     printf("Length [ %s ]", length(*password) ? "✓":"✗");
     printf("Uppercase [ %s ]", uppercase(*password) ? "✓":"✗");
+    printf("Uppercase [ %s ]", lowercase(*password) ? "✓":"✗");
 
     return 0;
 
