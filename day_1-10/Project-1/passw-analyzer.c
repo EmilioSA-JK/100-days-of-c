@@ -53,7 +53,7 @@ int lowercase(char *passwd){
 
         i++;
 
-        return count >= 2;
+    return count >= 4;    
 
     }
  
@@ -68,4 +68,6 @@ int main () {
     return 0;
 
 }
+
+
 
