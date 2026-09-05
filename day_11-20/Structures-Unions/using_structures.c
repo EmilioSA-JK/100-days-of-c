@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+
 
 typedef struct {
     int x;
@@ -11,6 +13,19 @@ typedef struct {
     point center;
 
 } circle;
+
+struct student {
+    char name[50];
+    int number;
+    int age;
+};
+
+void showStudentData(struct student *st) {
+
+    printf("\nStudent:\n");
+    printf("Name: %s\n", st->name);
+
+};
 
 int main () {
 
