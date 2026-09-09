@@ -59,11 +59,37 @@ int lowercase(char *passwd){
  
 }
 
+int numbers(char *passwd){
+
+    char *i = passwd;
+    int count = 0;
+
+    while(*i != '\0') {
+
+        if((*i >= 1) && (i* <= 9)) {
+
+            count++;
+        }
+
+        i++;
+
+
+        return count >= 1;
+
+    }
+
+    
+    
+}
+
+
+
 int main () {
     
     printf("Length [ %s ]", length(*password) ? "✓":"✗");
     printf("Uppercase [ %s ]", uppercase(*password) ? "✓":"✗");
     printf("Uppercase [ %s ]", lowercase(*password) ? "✓":"✗");
+    printf("Numbers [ %s ]", lowercase(*password) ? "✓" : "✗");
 
     return 0;
 
